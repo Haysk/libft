@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 17:03:33 by adylewsk          #+#    #+#             */
-/*   Updated: 2019/10/13 17:03:35 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/08 15:58:33 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strcat(char *dest, char *src)
 {
-	int i;
+	int	i;
 
 	i = ft_strlen(dest);
 	while (*src)

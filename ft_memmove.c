@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 15:09:13 by adylewsk          #+#    #+#             */
-/*   Updated: 2019/10/13 15:45:23 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/08 15:46:58 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	cpdst = (unsigned char *)dst;
 	cpsrc = (unsigned char *)src;
 	if (cpsrc < cpdst)
+	{
 		while (len)
 		{
 			len--;
 			cpdst[len] = cpsrc[len];
 		}
+	}
 	else
 		ft_memcpy(dst, src, len);
 	return (dst);

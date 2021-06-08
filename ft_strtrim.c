@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 15:10:59 by adylewsk          #+#    #+#             */
-/*   Updated: 2019/11/03 18:21:45 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/08 15:48:38 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static	int	ft_setmin(char *s1, char *set)
 	return (i);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	strmax;
 	size_t	strmin;

@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 15:09:33 by adylewsk          #+#    #+#             */
-/*   Updated: 2019/10/24 16:11:08 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/08 16:05:51 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ char	*ft_strdup(const char *src)
 	char	*cpy;
 
 	i = ft_strlen(src);
-	cpy = NULL;
-	if (!(cpy = malloc(sizeof(char) * i + 1)))
+	cpy = malloc(sizeof(char) * i + 1);
+	if (!cpy)
 		return (cpy);
 	i = 0;
 	while (src[i])

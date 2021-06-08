@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 15:08:34 by adylewsk          #+#    #+#             */
-/*   Updated: 2019/10/22 15:41:41 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/08 15:48:24 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void	*ft_calloc(size_t count, size_t size)
 	char	*str;
 
 	str = NULL;
-	if (!(str = malloc(count * size)))
+	str = malloc(count * size);
+	if (!str)
 		return (NULL);
 	ft_bzero(str, count * size);
 	return (str);

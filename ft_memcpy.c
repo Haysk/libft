@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 15:09:07 by adylewsk          #+#    #+#             */
-/*   Updated: 2019/10/13 15:10:15 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/08 15:46:27 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char *cpdst;
-	unsigned char *cpsrc;
+	unsigned char	*cpdst;
+	unsigned char	*cpsrc;
 
 	cpdst = (unsigned char *)dst;
 	cpsrc = (unsigned char *)src;

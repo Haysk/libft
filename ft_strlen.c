@@ -6,19 +6,20 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 11:14:02 by adylewsk          #+#    #+#             */
-/*   Updated: 2019/10/13 15:10:37 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/08 16:05:17 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
-	while (*s)
-	{
+	if (str == NULL)
+		return (0);
+	while (str[i])
 		i++;
-		s++;
-	}
 	return (i);
 }

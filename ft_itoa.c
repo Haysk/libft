@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 15:08:53 by adylewsk          #+#    #+#             */
-/*   Updated: 2019/10/24 18:24:27 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/08 15:49:11 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static	int	ft_nlen(long save)
 	return (i);
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*str;
 	long	save;
@@ -40,7 +40,8 @@ char		*ft_itoa(int n)
 
 	save = (long)n;
 	len = ft_nlen(save);
-	if (!(str = ft_calloc((len + 1), sizeof(*str))))
+	str = ft_calloc((len + 1), sizeof(*str));
+	if (!str)
 		return (0);
 	if (save == 0)
 		return ("0");
