@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 15:09:26 by adylewsk          #+#    #+#             */
-/*   Updated: 2021/06/08 16:46:22 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/08 17:00:09 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,25 +61,25 @@ char	**ft_split(char const *s, char c)
 {
 	int		i;
 	char	**tab;
-	char	*str;
+	char	*save;
 
 	i = 0;
-	str = (char *)s;
-	if (!str)
+	save = (char *)s;
+	if (!save)
 		return (NULL);
-	tab = ft_calloc(ft_nbrword(str, c) + 1, sizeof(char *));
+	tab = ft_calloc(ft_nbrword(save, c) + 1, sizeof(char *));
 	if (!tab)
 		return (NULL);
-	if (str && *str && *str != c)
-		tab[i] = ft_strduppart(&str, c);
+	if (save && *save && *save != c)
+		tab[i] = ft_strduppart(&save, c);
 	if (tab[i] != 0)
 		i++;
-	while (str && *str && *str == c)
+	while (save && *save && *save == c)
 	{
-		str++;
-		if (*str && *str != c)
+		save++;
+		if (*save && *save != c)
 		{
-			tab[i] = ft_strduppart(&str, c);
+			tab[i] = ft_strduppart(&save, c);
 			i++;
 		}
 	}
